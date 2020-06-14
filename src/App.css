@@ -1,0 +1,39 @@
+
+
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+
+}
+.title{
+    margin-left: 0.5em;
+    padding-left: 0.3em;
+    color: white;
+    letter-spacing: 0.2em;
+    font-size: 3em;
+    width:96%;
+    border-bottom: 1px solid white;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 650px){
+    .title{
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:320px) and (max-width: 500px){
+    .title{
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-left: 0.25em;
+    }
+    .movie-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;      
+    
+    }
+}

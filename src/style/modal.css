@@ -1,0 +1,294 @@
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    background-color: black;
+    border: 1px white solid;
+    border-radius: 0.3em;
+    color: white;
+    max-width: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+   
+  }
+  .black{
+    background-color: black;
+  }
+
+  .modal-header{
+      color:white;
+      text-align: right;
+      margin: 0.5em 1em;
+  } 
+  
+  .modal-header p{
+      color:white;
+      font-weight: bold;
+      font-size: 1.3em;
+      cursor: pointer;
+      transition: 0.3s;
+      margin:0;
+  }
+  .modal-header p:hover{
+      color: red;
+  }
+  .main-div{
+      display: flex;
+      padding-top: 0;
+  }
+  .main-div > div{
+      margin: 0 1em 1em 1em;
+  }
+  .title-element{
+    margin-top: 2em;
+  }
+  .title-element h1{
+        margin: 0;
+  }
+  .title-element span{
+      color: gray;
+      font-weight: normal;
+  }
+  .title-list{
+    padding:0;
+  }
+  .title-list > li{
+      float: left;
+      margin-right: 2em;
+  }
+  .function-element{
+    display:flex;
+    position: relative;
+    margin: 3em 0 7em 0;
+  }
+  .function-element .function-text-score{
+      text-align: center;
+      max-width: 4em;
+      position: absolute;
+      left: 8%;
+      top: -0.7em;
+      
+      font-size: 1.3em;
+  }
+  .function-element .function-text-gallery{
+    position: absolute;
+    left: 25%;
+    top: 0;    
+    font-size: 1.3em;
+    cursor: pointer;
+}
+  .function-element .function-text-trailer{
+    left: 50%;
+    font-size: 1.3em;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .description-element h3{
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+  .description-element p{
+      letter-spacing: 0.1em;
+      word-spacing: 0.2em;
+      line-height: 2em;   
+  }
+  .iframe{
+    padding: 1em;
+  }
+ 
+  @media only screen and (max-width: 1440px){
+    .Modal{
+        max-width: 100%;
+        left:40%;
+        top:40%;
+        transform: translate(-30%, -35%);
+      }
+      .function-element .function-text-score{
+        left: 10%;
+      }
+      .function-element .function-text-gallery{
+        left: 30%;
+      }
+      .function-element .function-text-trailer{
+        left: 60%;
+      }
+    }
+
+    @media only screen and (max-width: 1024px){
+      .Modal{
+          max-width: 100%;
+          left:25%;
+          top:25%;
+          transform: translate(-15%, -15%);
+        }
+        
+        .title-list > *{
+          font-size: 0.9em;
+
+        }
+      
+        .function-element .function-text-score{
+          left: 3em;
+          top: 0;
+          
+        }
+        .function-element .function-text-gallery{
+          left: 9em;
+          top: 0;
+          max-width: 4em;
+        }
+        .function-element .function-text-trailer{
+          left: 15em;
+          top: 0;
+          max-width: 4em;
+        }
+        .description-element p{
+          letter-spacing: 0.1em;
+          word-spacing: 0.2em;
+          line-height: 1.5em;   
+        }  
+        .Gallery{
+
+          top:30%;
+          left:30%;
+          transform: translate(-17%, -17%);
+        }
+      }
+      
+      @media only screen and (max-width: 650px){
+        .Modal{
+          transform: scale(0.9);
+          top:0;
+          left:0;
+          max-width: 100%;
+        }
+        .Overlay {
+          background-color: black;
+        }
+        .function-element .function-text-score{
+          left: 2em;
+          top:0;
+        }
+        .function-element .function-text-gallery{
+          left: 6em;
+          max-width: 4em;
+          top: 0;
+          text-align: center;
+        }
+        .function-element .function-text-trailer{
+          left: 10em;
+          max-width: 4em;
+          text-align: center;
+        }
+        .function-element{
+          
+          margin: 3em 0 6em 0;
+        }
+        .description-element p{
+          letter-spacing: 0.1em;
+          word-spacing: 0em;
+          line-height: 1em;   
+        }  
+        .Gallery{
+          top:10%
+        }
+      }
+      @media only screen and (min-width:320px) and (max-width: 500px){
+        .Modal{
+          transform: scale(1);
+          top:10%;
+          left:0;
+          max-width: 100%;
+          border: none;
+        }
+        .Modal:focus{
+          outline: none;
+      }
+        .main-div{
+          display: block;
+          text-align: center;
+        }
+        .main-div > div{
+          margin: 0 auto;
+        }
+        .content-div{
+          padding: 1em;
+        }
+         .image-div img{
+          width: 100%;
+          height: auto;
+          margin-top: 0;
+          left:0;
+          opacity: 0.25;
+          position: absolute;
+          
+        }
+        .title-element h1{
+           font-size: 1.2em;
+           padding-left: 1em;
+           padding-right: 1em;
+        }
+        li{
+          margin-top: 0.5em;
+        }
+        .title-list{
+          font-size: 0.7em;
+          list-style-type: none;
+
+        }
+        .function-element .function-text-score{
+          left: 25%;
+          top:0;
+          font-size: 1em;
+        }
+        .function-element .function-text-gallery{
+          left: 50%;
+          max-width: 4em;
+          top: 0;
+          text-align: center;
+          font-size: 1em;
+        }
+        .function-element .function-text-trailer{
+          left: 75%;
+          max-width: 4em;
+          text-align: center;
+          font-size: 1em;
+        }
+        .function-element{
+          
+          margin: 1em 0 5em 0;
+        }
+        
+        .description-element h3{
+          font-size: 1.1em;
+        }
+        .description-element p{
+          letter-spacing: 0.1em;
+          word-spacing: 0em;
+          line-height: 1.5em;  
+          font-size: 0.75em; 
+        }  
+        .Gallery{
+          top:10%
+        }
+        .iframe{
+          width:320px;
+        }
+        .title-list > li{
+          float: none;
+          margin-right: 2em;
+      }
+      }

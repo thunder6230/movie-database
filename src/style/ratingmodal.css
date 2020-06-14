@@ -1,0 +1,87 @@
+.box-lg{
+    position: absolute;
+    top: 0;
+    width:4.5em;
+    height: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(1.2);
+}
+.box-lg .percent-lg{
+    position: relative;
+    width: 4em;
+    height: 4em;
+}
+
+.box-lg .percent-lg svg{
+    
+    position: relative;
+    width: 4em;
+    height: 4em;
+}
+
+.box-lg .percent-lg svg circle{
+    width: 4em;
+    height: 4em;
+    fill: black;
+    stroke-width: 8;
+    transform: translate(5px, 5px);
+    stroke-linecap: round;
+   
+}
+
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+
+  .box-lg .percent-lg svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: rgb(88, 88, 88);    
+}
+
+.box-lg .percent-lg svg circle:nth-child(2){
+    stroke-width: 5;
+    animation: progress 1s ease-out forwards;    
+}
+
+.box-lg .percent-lg .number-lg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.2em;
+    height: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+.box-lg .percent-lg .number-lg span{
+    font-size: 0.6em;
+}
+@media only screen and (max-width: 1024px){
+    .box-lg{
+        left:0;
+        top: 1em;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .box-lg{
+        left:-1em;
+        top:1em;
+    }
+}
+@media only screen and (min-width:320px) and (max-width: 500px){
+    .box-lg{
+        left:5%;
+        top:0.3em;
+        transform: scale(0.9);
+    }
+}
